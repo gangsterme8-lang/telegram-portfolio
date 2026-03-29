@@ -19,10 +19,10 @@ if (!WEBAPP_URL) {
   process.exit(1);
 }
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
