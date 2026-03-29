@@ -1,7 +1,6 @@
 {
   "name": "telegram-portfolio",
   "version": "1.0.0",
-  "description": "Telegram Web App portfolio bot",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
